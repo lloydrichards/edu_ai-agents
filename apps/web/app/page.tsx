@@ -1,9 +1,7 @@
-import Image from "next/image";
-import { Card } from "@agent/ui/card";
 import { answerMyQuestion } from "@agent/ai/text";
 
 export default async function Page() {
-  const answer = await answerMyQuestion("Are you listening to me?");
+  const answer = await answerMyQuestion("How big can a Monstera plant grow?");
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
       <div>

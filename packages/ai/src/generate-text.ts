@@ -8,6 +8,8 @@ export const answerMyQuestion = async (prompt: string) => {
   const { text } = await generateText({
     model,
     prompt,
+    system:
+      "You are a helpful assistant. Nice short answers are preferred. Answer the question as best as you can.",
   });
 
   return text;
