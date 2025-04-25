@@ -1,0 +1,36 @@
+{
+  "name": "@agent/ai",
+  "version": "0.0.0",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./text": {
+      "types": "./src/generate-text.ts",
+      "default": "./dist/generate-text.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "types": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0"
+  },
+  "peerDependencies": {
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@agent/eslint-config": "*",
+    "@agent/typescript-config": "*",
+    "eslint": "^9.25.0",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "ai": "^4.3.10",
+    "ollama-ai-provider": "^1.2.0"
+  }
+}
