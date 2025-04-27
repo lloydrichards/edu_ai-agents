@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "@agent/ai": "*",
+    "lucide-react": "^0.503.0",
+    "maplibre-gl": "^5.4.0",
     "next": "^15.3.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-map-gl": "^8.0.4"
   },
   "devDependencies": {
     "@agent/eslint-config": "*",

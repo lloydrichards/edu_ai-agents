@@ -1,8 +1,7 @@
 import { CoreMessage, generateText } from "ai";
-import { createOllama } from "ollama-ai-provider";
+import { model} from "./model/ollama";
 
-const ollama = createOllama({});
-const model = ollama("qwen2.5");
+
 
 export const answerMyQuestion = async (prompt: string) => {
   const { text } = await generateText({
