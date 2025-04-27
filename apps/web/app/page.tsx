@@ -1,6 +1,7 @@
 import { AnswerBot } from "./answer-bot";
 import { ChatBot } from "./chat-bot";
 import { InterestingMap } from "./interest-map";
+import { TicTacToeBot } from "./tic-tac-toe-bot";
 
 export default async function Page() {
   return (
@@ -8,6 +9,7 @@ export default async function Page() {
       <AnswerBot />
       <ChatBot />
       <InterestingMap />
+      <TicTacToeBot />
     </main>
   );
 }
